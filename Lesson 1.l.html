@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5 - Web Development</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+
+        #tab-container {
+            background-color: aliceblue;
+            height: 60px;
+            padding: 20px;
+            margin: 10px 0;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .btn-style {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        .btn-style:hover {
+            background-color: #45a049;
+        }
+
+        .about-section, .subject-section {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        img:hover {
+            cursor: wait;
+        }
+
+        iframe {
+            margin: 10px 0;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Magic Button</h1>
+    <p>Welcome to Web Development Series!</p>
+
+    <button class="btn-style" onclick="alert('You are awesome!')">Click Me</button>
+
+    <div id="tab-container">
+        <button class="btn-style">Home</button>
+        <button class="btn-style">Maths</button>
+        <button class="btn-style">Science</button>
+    </div>
+
+    <div class="about-section">
+        <h2>About Section</h2>
+        <p>This page contains subject content and embedded YouTube videos.</p>
+        <img src="https://via.placeholder.com/150" alt="Sample Image">
+    </div>
+
+    <div class="subject-section">
+        <h2>Mathematics</h2>
+        <p>Learn maths with videos.</p>
+        <iframe width="420" height="250" src="https://www.youtube.com/embed/9CPWelIEKf0" allowfullscreen></iframe>
+    </div>
+
+    <div class="subject-section">
+        <h2>Science</h2>
+        <p>Explore science concepts.</p>
+        <iframe width="420" height="250" src="https://www.youtube.com/embed/9CPWelIEKf0" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>
